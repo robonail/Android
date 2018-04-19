@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Robonail</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="pref_sync_to_cloud_titles">
+        <item>Every 15 minutes</item>
+        <item>Every 1 hour</item>
+        <item>Every 1 day</item>
+    </string-array>
+    <string-array name="pref_sync_to_cloud_values">
+        <item>15</item>
+        <item>60</item>
+        <item>1440</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_child_preference">my title</string>
+    <string name="summary_child_preference">summary</string>
+    <string name="title_checkbox_preference">check pref</string>
+    <string name="summary_checkbox_preference">summary</string>
+    <string name="general_title">General Settings</string>
+    <string name="title_edittext_preference">edit title</string>
+    <string name="timing_and_debug_title"><![CDATA[Timing & Debug]]></string>
+    <string name="debug_enabled_summary">Enabled will allow troubleshooting but performance will be impacted</string>
+    <string name="title_receive_software_updates">receive software updates</string>
+    <string name="summary_receive_software_updates">receive software updates</string>
+    <string name="summary_debug_preference">timing and debugging settings</string>
+</resources>

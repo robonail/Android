@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageButton
+    android:id="@+id/imgBtnUp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@android:drawable/menuitem_background"
+    android:src="@drawable/arrow_up_48"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtArduino"
+    app:layout_constraintHorizontal_bias="0.512"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="0dp" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/menuitem_background"
+        android:src="@drawable/arrow_down_48"
+        app:layout_constraintLeft_toRightOf="@+id/imgBtnLeft"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnLeft" />
+
+    <ImageButton
+        android:id="@+id/imgBtnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/menuitem_background"
+        android:src="@drawable/arrow_left_48"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgBtnUp"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnUp" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/menuitem_background"
+        android:src="@drawable/arrow_right_48"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/imgBtnUp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnUp" />
+
+    <EditText
+        android:id="@+id/txtDown"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/imgBtnDown"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnDown" />
+
+    <EditText
+        android:id="@+id/txtUp"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/imgBtnUp"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnUp" />
+
+    <EditText
+        android:id="@+id/txtRight"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/imgBtnRight"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnRight" />
+
+    <EditText
+        android:id="@+id/txtLeft"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toRightOf="@+id/imgBtnLeft"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnLeft" />
+
+
+    <!--ScrollView
+        android:id="@+id/scrollViewArduino"
+        android:layout_height="350dp"
+        android:layout_width="395dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteX="8dp"-->
+
+    <TextView
+        android:id="@+id/txtArduino"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbars="vertical"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+        android:id="@+id/txtCommand1"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtValue1"
+        android:text="command"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnDown" />
+
+    <EditText
+        android:id="@+id/txtValue1"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtCommand2"
+        android:text="value"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCommand1"
+        app:layout_constraintLeft_toRightOf="@+id/txtCommand1"
+        app:layout_constraintTop_toTopOf="@+id/txtCommand1" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSend1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:drawable/menuitem_background"
+        app:layout_constraintBottom_toBottomOf="@+id/txtValue1"
+        app:layout_constraintLeft_toRightOf="@+id/txtValue1"
+        app:layout_constraintTop_toTopOf="@+id/txtValue1"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/send_38" />
+
+
+    <EditText
+        android:id="@+id/txtCommand2"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtValue2"
+        android:text="cmd"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommand1" />
+
+    <EditText
+        android:id="@+id/txtValue2"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtCommand3"
+        android:text="value"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCommand2"
+        app:layout_constraintLeft_toRightOf="@+id/txtCommand2"
+        app:layout_constraintTop_toTopOf="@+id/txtCommand2" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSend2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:drawable/menuitem_background"
+        app:layout_constraintBottom_toBottomOf="@+id/txtValue2"
+        app:layout_constraintLeft_toRightOf="@+id/txtValue2"
+        app:layout_constraintTop_toTopOf="@+id/txtValue2"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/send_38" />
+
+
+    <EditText
+        android:id="@+id/txtCommand3"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtValue3"
+        android:text="cmd"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommand2" />
+
+    <EditText
+        android:id="@+id/txtValue3"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtCommand4"
+        android:text="value"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCommand3"
+        app:layout_constraintLeft_toRightOf="@+id/txtCommand3"
+        app:layout_constraintTop_toTopOf="@+id/txtCommand3" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSend3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:drawable/menuitem_background"
+        app:layout_constraintBottom_toBottomOf="@+id/txtValue3"
+        app:layout_constraintLeft_toRightOf="@+id/txtValue3"
+        app:layout_constraintTop_toTopOf="@+id/txtValue3"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/send_38" />
+
+
+    <EditText
+        android:id="@+id/txtCommand4"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtValue4"
+        android:text="cmd"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommand3" />
+
+    <EditText
+        android:id="@+id/txtValue4"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtCommand5"
+        android:text="value"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCommand4"
+        app:layout_constraintLeft_toRightOf="@+id/txtCommand4"
+        app:layout_constraintTop_toTopOf="@+id/txtCommand4" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSend4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:drawable/menuitem_background"
+        app:layout_constraintBottom_toBottomOf="@+id/txtValue4"
+        app:layout_constraintLeft_toRightOf="@+id/txtValue4"
+        app:layout_constraintTop_toTopOf="@+id/txtValue4"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/send_38" />
+
+    <EditText
+        android:id="@+id/txtCommand5"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:nextFocusDown="@+id/txtValue5"
+        android:text="cmd"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCommand4" />
+
+    <EditText
+        android:id="@+id/txtValue5"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="value"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCommand5"
+        app:layout_constraintLeft_toRightOf="@+id/txtCommand5"
+        app:layout_constraintTop_toTopOf="@+id/txtCommand5" />
+
+    <ImageButton
+        android:id="@+id/imgBtnSend5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:drawable/menuitem_background"
+        app:layout_constraintBottom_toBottomOf="@+id/txtValue5"
+        app:layout_constraintLeft_toRightOf="@+id/txtValue5"
+        app:layout_constraintTop_toTopOf="@+id/txtValue5"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/send_38" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnUp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch2" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch3" />
+</android.support.constraint.ConstraintLayout>

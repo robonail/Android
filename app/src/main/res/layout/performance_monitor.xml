@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ProgressBar
+        android:id="@+id/progressBarMobile"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="32dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="40"
+        app:layout_constraintEnd_toStartOf="@+id/progressBarNav"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStatsMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:lines="2"
+        android:text="99%\n124/125"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarMobile"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarMobile"
+        app:layout_constraintStart_toStartOf="@+id/progressBarMobile"
+        app:layout_constraintTop_toTopOf="@+id/progressBarMobile" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Mobile"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarMobile"
+        app:layout_constraintStart_toStartOf="@+id/progressBarMobile"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarMobile" />
+
+    <ProgressBar
+        android:id="@+id/progressBarNav"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:max="100"
+        android:progress="40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStatsNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:lines="2"
+        android:text="99%\n124/125"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarNav"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarNav"
+        app:layout_constraintStart_toStartOf="@+id/progressBarNav"
+        app:layout_constraintTop_toTopOf="@+id/progressBarNav" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Navigation"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarNav"
+        app:layout_constraintStart_toStartOf="@+id/progressBarNav"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarNav" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBarRipbot"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="32dp"
+        android:max="100"
+        android:progress="40"
+        app:layout_constraintStart_toEndOf="@+id/progressBarNav"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtStatsRipbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:lines="2"
+        android:text="99%\n124/125"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarRipbot"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarRipbot"
+        app:layout_constraintStart_toStartOf="@+id/progressBarRipbot"
+        app:layout_constraintTop_toTopOf="@+id/progressBarRipbot" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Ripbot"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarRipbot"
+        app:layout_constraintStart_toStartOf="@+id/progressBarRipbot"
+        app:layout_constraintTop_toBottomOf="@+id/progressBarRipbot" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSaveData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:text="CheckBox"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</android.support.constraint.ConstraintLayout>
